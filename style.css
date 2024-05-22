@@ -1,0 +1,58 @@
+html,
+body{
+ background: var(--default);
+}
+
+h1 {
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: azure;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 50px;
+}
+  
+
+:root{
+  --default: #121213;
+  --vacio: #3a3a3c;
+  --error: #b59f3b;
+  --correcto: #538d4e;
+}
+ 
+#game{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 600 px;
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: repeat(6,auto);
+  grid-template-columns: repeat(5,auto);
+  }
+
+.box{
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--vacio);
+  margin: 4px;
+  color: white;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+}
+
+.box.vacio{
+  background: var(--vacio);
+}
+
+.box.error{
+  background: var(--error);
+}
+.box.correcto{
+  background: var(--correcto);
+}
+
